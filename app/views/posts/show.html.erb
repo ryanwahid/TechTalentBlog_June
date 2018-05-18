@@ -15,5 +15,22 @@
   <%= @post.blog_entry %>
 </p>
 
-<%= link_to 'Edit', edit_post_path(@post) %> |
+<p>
+<%= link_to 'Edit', edit_post_path(@post) %>
+</p>
+
+<div id="comments">
+	<%= render 'comments/form', comment: @comment %>
+
+    <% @post.comments.each do |comment| %>
+        <p>
+	    <%= comment.author %> said...<br />
+	    <%= comment.comment_entry %>
+	</p>
+    <% end %>
+
+</div>
+
+<p>
 <%= link_to 'Back', posts_path %>
+</p>
