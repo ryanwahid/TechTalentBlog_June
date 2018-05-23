@@ -19,8 +19,8 @@
         <td><%= post.author %></td>
         <td><%= post.blog_entry %></td>
         <td><%= link_to 'Show', post, :class => 'btn btn-primary' %></td>
-        <td><%= link_to 'Edit', edit_post_path(post), :class => 'btn btn-warning' %></td>
-        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' }, :class =>'btn btn-danger' %></td>
+        <td><%= link_to 'Edit', edit_post_path(post), :class => 'btn btn-warning', :id => 'edit'  %></td>
+        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' }, :class =>'btn btn-danger', :id => 'destroy' %></td>
       </tr>
     <% end %>
   </tbody>
