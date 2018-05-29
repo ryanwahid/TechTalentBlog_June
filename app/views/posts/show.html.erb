@@ -6,13 +6,8 @@
 </p>
 
 <p>
-  <strong>Author:</strong>
-  by <%= @post.user.username %>
-</p>
-
-<p>
   <strong>Blog entry:</strong>
-  <%= @post.blog_entry %>
+  <%= @post.blog_entry.html_safe %>
 </p>
 
 <p>

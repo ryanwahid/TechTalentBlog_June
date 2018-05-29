@@ -31,6 +31,7 @@ gem 'jquery-rails'
 gem 'devise'
 gem 'gravatarify'
 gem 'carrierwave'
+gem 'kaminari'
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
